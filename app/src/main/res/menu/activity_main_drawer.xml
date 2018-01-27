@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/imap"
+            android:title="Главная" />
+        <item
+            android:id="@+id/a1"
+            android:title="Александровский район" />
+        <item
+            android:id="@+id/v1"
+            android:title="Владимир" />
+        <item
+            android:id="@+id/v2"
+            android:title="Вязниковский район" />
+        <item
+            android:id="@+id/g1"
+            android:title="Гороховетский район" />
+        <item
+            android:id="@+id/g2"
+            android:title="Гусь-хрустальный район" />
+        <item
+            android:id="@+id/k1"
+            android:title="Кольчугинский район" />
+        <item
+            android:id="@+id/k2"
+            android:title="Камешковский район" />
+        <item
+            android:id="@+id/k3"
+            android:title="Киржачский район" />
+        <item
+            android:id="@+id/k4"
+            android:title="Ковровский район" />
+        <item
+            android:id="@+id/m1"
+            android:title="Меленковский район" />
+        <item
+            android:id="@+id/m2"
+            android:title="Муромский район" />
+        <item
+            android:id="@+id/p1"
+            android:title="Петушинский район" />
+        <item
+            android:id="@+id/s1"
+            android:title="Селивановский район" />
+        <item
+            android:id="@+id/s2"
+            android:title="Собинский район" />
+        <item
+            android:id="@+id/s3"
+            android:title="Судогодский район" />
+        <item
+            android:id="@+id/s4"
+            android:title="Суздальский район" />
+        <item
+            android:id="@+id/u1"
+            android:title="Юрьев-Польский район" />
+    </group>
+    <group android:checkableBehavior="single"></group>
+
+</menu>
