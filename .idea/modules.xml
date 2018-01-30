@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webview1_old.iml" filepath="$PROJECT_DIR$/webview1_old.iml" />
+      <module fileurl="file://C:\Users\bydos\StudioProjects\tourism_map\app\app.iml" filepath="C:\Users\bydos\StudioProjects\tourism_map\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tourism_map.iml" filepath="$PROJECT_DIR$/tourism_map.iml" />
+      <module fileurl="file://C:\Users\bydos\StudioProjects\tourism_map\webview1_old.iml" filepath="C:\Users\bydos\StudioProjects\tourism_map\webview1_old.iml" />
     </modules>
   </component>
 </project>

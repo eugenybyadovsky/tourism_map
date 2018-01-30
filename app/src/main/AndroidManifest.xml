@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false">
+        android:hardwareAccelerated="true">
         <activity
             android:name=".MainActivity"
-            android:label="Туристический потенциал"
+            android:label="Виды туризма"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

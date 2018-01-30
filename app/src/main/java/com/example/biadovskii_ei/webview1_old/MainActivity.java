@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,8 +27,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Туристический потенциал");
         setSupportActionBar(toolbar);
 
+        // init webView
         WebView myWebView = (WebView) findViewById(R.id.web2);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -50,11 +53,12 @@ public class MainActivity extends AppCompatActivity
             myWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
 
+        //load page in webView
         if (savedInstanceState == null)
         {
             myWebView.loadUrl("file:///android_asset/potential/index.html");
         }
-
+        // creating Back method for floating button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,4 +187,5 @@ public class MainActivity extends AppCompatActivity
         super.onRestoreInstanceState(savedInstanceState);
         myWebView.restoreState(savedInstanceState);
     }
+
 }
