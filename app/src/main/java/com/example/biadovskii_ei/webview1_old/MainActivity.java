@@ -34,7 +34,15 @@ public class MainActivity extends AppCompatActivity
         WebView myWebView = (WebView) findViewById(R.id.web2);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.setWebViewClient(new WebViewClient());
+        //myWebView.setWebViewClient(new WebViewClient());
+        myWebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+
+        });
 
         //improve webview perfomance
         myWebView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
@@ -52,6 +60,7 @@ public class MainActivity extends AppCompatActivity
             // older android version, disable hardware acceleration
             myWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
+
 
         //load page in webView
         if (savedInstanceState == null)
